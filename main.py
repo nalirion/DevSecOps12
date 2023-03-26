@@ -3,7 +3,6 @@ def printboard(args):
     for i in range(3):
         print(args[i])
 
-
 # check who is the winner
 def checkwinner(args):
     if args == [['x', '_', '_'], ['x', '_', '_'], ['x', '_', '_']]:
