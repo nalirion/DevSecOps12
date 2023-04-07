@@ -3,8 +3,9 @@ def printboard(args):
     for i in range(3):
         print(args[i])
 
+
 # check who is the winner
-def checkwinner(args):
+def check_winner(args):
     if args == [['x', '_', '_'], ['x', '_', '_'], ['x', '_', '_']]:
         return 1
     elif args == [['_', 'x', '_'], ['_', 'x', '_'], ['_', 'x', '_']]:
@@ -67,7 +68,7 @@ while True:  # for running the program
             else:
                 print('wrong input')
         printboard(board)
-        if checkwinner(board) == 1:  # check if the winner is x
+        if check_winner(board) == 1:  # check if the winner is x
             print("player x wins!")
             break
         elif draw == 9:
@@ -96,7 +97,7 @@ while True:  # for running the program
                 print('wrong input')
             # print the board after every input of the turn of the player
         printboard(board)
-        if checkwinner(board) == 2:
+        if check_winner(board) == 2:
             print("player o wins!")
             break  # stops the game
         elif draw == 9:  # counting the number of free space on the board
